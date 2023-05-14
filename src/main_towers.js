@@ -80,9 +80,9 @@ const towers = {
         // Crear discos
         let tower1 = document.getElementById("tower1");
 
-        createDisc(1, tower1);
-        for (let i = 2; i <= 6; i++) {
-            createDisc(i, tower3);
+        
+        for (let i = 1; i <= 6; i++) {
+            createDisc(i, tower1);
         }
 
         function createDisc(size, tower) {

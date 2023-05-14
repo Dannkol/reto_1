@@ -1,6 +1,6 @@
 import config from "../config.js";
 import { post_win } from "../../src/main_cronometro.js";
-import { towers } from "../../src/main.js";
+import { towers } from "../../src/main_towers.js";
 import { reset } from "../../src/main_cronometro.js";
 
 let componet = await config.phatname(import.meta.url)
