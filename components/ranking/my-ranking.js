@@ -49,14 +49,6 @@ export default {
 
 
                 function init(lista_ranking) {
-                    /* items_ranking.forEach((holiday, idx) => {
-                        const liEl = document.createElement("li");
-                        liEl.style.setProperty("--day_idx", idx);
-                        liEl.innerHTML = `<span>${idx + 1
-                            }</span><span>${holiday}</span>`;
-                        ulEl.append(liEl);
-                    });
-                    ulEl.style.setProperty("--rotateDegrees", rotate); */
 
                     ulEl.insertAdjacentHTML("beforeend", lista_ranking);
                     ulEl.style.setProperty("--rotateDegrees", rotate);

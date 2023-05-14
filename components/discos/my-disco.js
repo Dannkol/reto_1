@@ -35,7 +35,7 @@ export default {
                 for (var i = 0; i < 6; i++) {
                   color += letters[Math.floor(Math.random() * 16)];
                 }
-                this.shadowRoot.querySelector("div").setAttribute("style", `${attr}:${20 * newValue}px;`)
+                this.shadowRoot.querySelector("div").setAttribute("style", `${attr}:${40 * newValue}px;`)
                 this.shadowRoot.querySelector("div").style.backgroundColor = color;
             }
             connectedCallback() {

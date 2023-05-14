@@ -19,7 +19,7 @@ async function get() {
         return 0;
       });
       
-    return data;
+    return data.slice(0,10);
 }
 
 

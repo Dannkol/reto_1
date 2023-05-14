@@ -1,12 +1,14 @@
 <slot></slot><br />
-<div class="container">
 
+<div class="controls">
+	<button id="up">▲</button>
+	<button id="close">X</button>
+	<button id="down">▼</button>
+</div>
+
+<div class="container">
 	<ul></ul>
-	<div class="controls">
-		<button id="up">▲</button>
-		<button id="close">X</button>
-		<button id="down">▼</button>
-	</div>
+
 </div>
 
 
@@ -36,10 +38,6 @@
 		background: inherit;
 	}
 
-	.container {
-		position: relative;
-		width: min(400px, 100%);
-	}
 
 	/* holidays */
 	ul {
@@ -63,7 +61,6 @@
 		color: white;
 		display: grid;
 		grid-template-columns: 2.5rem auto;
-		height: 2.4rem;
 		transition: transform 500ms ease, background-color 500ms ease;
 	}
 
@@ -84,23 +81,23 @@
 	li>span {
 		padding-inline-start: 0.5rem;
 		color: white;
+		font-size: 28px;
 	}
 
 	/* controls */
 	.controls {
 		position: absolute;
-		top: 50%;
-		left: 280px;
-		transform: translateY(-50%);
+		z-index: 10;
+		top: 60%;
+		left: 10px;
 		display: flex;
-		flex-direction: column;
 		gap: 0.125rem;
 	}
 
 	.controls button {
-		width: 1.5rem;
+		width: 3.5rem;
 		aspect-ratio: 1;
-		font-size: 0.9rem;
+		font-size: 1.9rem;
 		color: white;
 		border: none;
 		background: #39657e;

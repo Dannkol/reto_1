@@ -1,7 +1,12 @@
 import { reset } from "../main_cronometro.js"
 
 const api_get = async (e) => {
-    let data = await fetch('https://646014e2fe8d6fb29e2b86dd.mockapi.io/api/wins')
+
+    const url = new URL('https://646014e2fe8d6fb29e2b86dd.mockapi.io/api/wins');
+    let data = await fetch(url, {
+        method: 'GET',
+        headers: { 'content-type': 'application/json' },
+    })
     data = await data.json()
     return data
 }
